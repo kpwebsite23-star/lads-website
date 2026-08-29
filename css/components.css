@@ -1931,3 +1931,17 @@
   background-color: var(--color-primary-dark);
   transform: translateY(-3px);
 }
+
+/* ==========================================================================
+   FADE UP ANIMATION ON SCROLL
+   ========================================================================== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
