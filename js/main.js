@@ -1004,3 +1004,23 @@ function handleFormSuccess(form, type) {
   } else {
     initScrollFade();
   }
+
+
+  /* ==========================================================================
+     AUTO-UPDATE FOOTER COPYRIGHT YEAR
+     ========================================================================== */
+  function updateCopyrightYear() {
+    const yearElements = document.querySelectorAll('.copyright-year');
+    const currentYear = new Date().getFullYear();
+    yearElements.forEach(el => {
+      el.textContent = currentYear;
+    });
+    
+    // Fallback if class isn't used
+    const footerText = document.querySelector('.footer-bottom p');
+    if (footerText && footerText.innerHTML.includes('©')) {
+      footerText.innerHTML = footerText.innerHTML.replace(/©\s*\d{4}/, '© ' + currentYear);
+    }
+  }
+  
+  updateCopyrightYear();
