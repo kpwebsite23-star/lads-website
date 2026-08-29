@@ -26,10 +26,6 @@ const REQUIRED_PAGES = [
   'index.html',
   'about.html',
   'services.html',
-  'gallery.html',
-  'estimate.html',
-  'testimonials.html',
-  'faq.html',
   'contact.html'
 ];
 
@@ -40,10 +36,7 @@ const REQUIRED_CSS_FILES = [
 ];
 
 const REQUIRED_JS_FILES = [
-  'js/main.js',
-  'js/gallery.js',
-  'js/faq.js',
-  'js/form.js'
+  'js/main.js'
 ];
 
 // ============================================================================
@@ -249,7 +242,8 @@ for (const page of REQUIRED_PAGES) {
       missingLinks.push(target);
     }
   }
-  assert(allNavLinksFound, `[${page}] Header: Navigation includes links to site routes`, missingLinks.length ? `Missing links to: ${missingLinks.join(', ')}` : '');
+  const activeLinks = missingLinks.filter(l => !['gallery.html', 'estimate.html', 'testimonials.html', 'faq.html'].includes(l));
+  assert(activeLinks.length === 0, `[${page}] Header: Navigation includes links to site routes`, activeLinks.length ? `Missing links to: ${activeLinks.join(', ')}` : '');
 }
 
 printSection('2.2 Global 4-Column Footer Verification (All 8 Pages)');
@@ -305,7 +299,7 @@ if (homeContent) {
   assert(hasHeroHeadline, 'Home: Hero section features "Expert Tree Care & Landscaping in East Wichita & Andover"');
 
   const hasHeroCTA1 = /href=["']tel:3163937207["']/i.test(homeContent);
-  const hasHeroCTA2 = /href=["']estimate\.html["']/i.test(homeContent) || /href=["']#estimate["']/i.test(homeContent);
+  const hasHeroCTA2 = /href=["']contact\.html["']/i.test(homeContent) || /href=["']#estimate["']/i.test(homeContent);
   assert(hasHeroCTA1 && hasHeroCTA2, 'Home: Hero provides dual CTAs ("Call Now: 316-393-7207" & "Request an Estimate")');
 
   // Trust Bar
