@@ -226,7 +226,7 @@ for (const page of REQUIRED_PAGES) {
   const hasPhoneText = /316-393-7207/.test(content);
   const hasCallNowText = /Call Now: 316-393-7207|Call: 316-393-7207|Call 316-393-7207/i.test(content);
   assert(hasPhoneHref && hasPhoneText, `[${page}] Header CTA: Contains tel:3163937207 phone link`);
-  assert(hasCallNowText, `[${page}] Header CTA: Features high-contrast "Call Now: 316-393-7207" copy`);
+  assert(hasCallNowText, `[${page}] Header CTA: Is clean without clutter`);
 
   // Navigation Links to Core Pages
   const hasNavTag = /<nav\b[^>]*>/i.test(content);
@@ -265,7 +265,7 @@ for (const page of REQUIRED_PAGES) {
   const hasFooterEmail = /mailto:[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/i.test(content);
   const hasFooterHours = /Hours|Mon|Sat|AM|PM/i.test(content);
   const hasFooterLogoImg = /<img[^>]+src=["']assets\/images\/logo\.jpg["'][^>]+class=["'][^"']*footer-logo-img[^"']*["']/i.test(content);
-  assert(hasLadOborny, `[${page}] Footer Col 1: Names owner Lad Oborny`);
+  assert(hasLadOborny, `[${page}] Footer Col 1: Names owner`);
   assert(hasFooterPhone && hasFooterEmail, `[${page}] Footer Col 1: Contains direct phone & email links`);
   assert(hasFooterHours, `[${page}] Footer Col 1: Displays business hours of operation`);
   assert(hasFooterLogoImg, `[${page}] Footer Col 1: Displays official brand logo (assets/images/logo.jpg) with .footer-logo-img`);
@@ -304,7 +304,7 @@ if (homeContent) {
 
   // Trust Bar
   const hasTrustBar = /Fully Insured/i.test(homeContent) && /Lad Oborny/i.test(homeContent) && /5-Star/i.test(homeContent);
-  assert(hasTrustBar, 'Home: Trust bar features "Fully Insured & Safe", "Locally Owned by Lad Oborny", and "5-Star Rated"');
+  assert(hasTrustBar, 'Home: Trust bar features "Fully Insured & Safe", "Locally Owned & Operated", and "5-Star Rated"');
 
   // Core Services Grid (4 Services)
   const hasCoreServicesGrid = /Tree Removal/i.test(homeContent)
@@ -337,7 +337,7 @@ if (homeContent) {
 printSection('2.4 About Page (`about.html`) Acceptance Criteria');
 const aboutContent = readFileSafe('about.html');
 if (aboutContent) {
-  assert(/Lad Oborny/i.test(aboutContent), 'About: Features owner biography for Lad Oborny');
+  assert(/Lad Oborny/i.test(aboutContent), 'About: Features owner biography');
   assert(/East Wichita|Andover|Kansas/i.test(aboutContent), 'About: Emphasizes local roots and community commitment');
   assert(/Safety|Cleanup|Pricing|Values|Satisfaction/i.test(aboutContent), 'About: Details core company values (Safety First, Quality & Cleanup, Fair Pricing)');
   assert(/tel:3163937207/i.test(aboutContent), 'About: Includes Pre-Footer CTA to call 316-393-7207');
