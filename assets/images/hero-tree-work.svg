@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none" class="hero-graphic-svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14361E"/>
+      <stop offset="40%" stop-color="#1E4D2B"/>
+      <stop offset="85%" stop-color="#2D723E"/>
+      <stop offset="100%" stop-color="#3D8B52"/>
+    </linearGradient>
+    <linearGradient id="overlayDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(10, 25, 15, 0.85)"/>
+      <stop offset="60%" stop-color="rgba(20, 54, 30, 0.7)"/>
+      <stop offset="100%" stop-color="rgba(15, 35, 20, 0.88)"/>
+    </linearGradient>
+    <linearGradient id="sunbeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5B041" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#E89818" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky and Sunlight Backdrop -->
+  <rect width="1200" height="675" fill="url(#skyGrad)"/>
+  
+  <!-- Subtle Tree Foliage Silhouettes in Distance -->
+  <g opacity="0.4">
+    <ellipse cx="200" cy="480" rx="220" ry="160" fill="#14361E"/>
+    <ellipse cx="450" cy="460" rx="180" ry="140" fill="#0D2414"/>
+    <ellipse cx="780" cy="470" rx="240" ry="170" fill="#14361E"/>
+    <ellipse cx="1050" cy="450" rx="200" ry="150" fill="#0D2414"/>
+  </g>
+
+  <!-- Upscale Andover/East Wichita Home Silhouette -->
+  <g transform="translate(620, 260)" opacity="0.85">
+    <!-- Roof lines & gables -->
+    <polygon points="120,40 240,160 0,160" fill="#2C3E35"/>
+    <polygon points="320,70 420,170 220,170" fill="#1A2421"/>
+    <polygon points="460,90 540,170 380,170" fill="#2C3E35"/>
+    <!-- House body -->
+    <rect x="20" y="160" width="500" height="180" fill="#FAFAF7" opacity="0.95"/>
+    <!-- Architectural Windows with Warm Amber Lighting -->
+    <rect x="60" y="190" width="50" height="70" rx="4" fill="#FFE082" stroke="#4B5563" stroke-width="2"/>
+    <rect x="140" y="190" width="50" height="70" rx="4" fill="#FFE082" stroke="#4B5563" stroke-width="2"/>
+    <rect x="300" y="190" width="70" height="80" rx="4" fill="#FFE082" stroke="#4B5563" stroke-width="2"/>
+    <rect x="400" y="190" width="60" height="70" rx="4" fill="#FFE082" stroke="#4B5563" stroke-width="2"/>
+    <!-- Front Porch Columns & Door -->
+    <rect x="230" y="240" width="40" height="100" fill="#E89818"/>
+    <rect x="200" y="220" width="100" height="20" fill="#2C3E35"/>
+  </g>
+
+  <!-- Large Canopy Oak Tree (Subject of Safe Rigging & Care) -->
+  <g transform="translate(180, 100)">
+    <!-- Main massive trunk -->
+    <path d="M120 480 C110 380 90 300 70 240 C50 180 20 120 0 80 C40 100 80 130 110 180 C130 140 160 100 210 60 C180 110 160 170 150 230 C180 200 220 180 280 160 C240 210 200 260 170 320 C180 390 190 440 200 480 Z" fill="#14361E"/>
+    
+    <!-- Rich Lush Canopy Layers -->
+    <ellipse cx="60" cy="100" rx="110" ry="85" fill="#2D723E" opacity="0.9"/>
+    <ellipse cx="200" cy="70" rx="140" ry="95" fill="#3D8B52" opacity="0.9"/>
+    <ellipse cx="280" cy="140" rx="100" ry="80" fill="#2D723E" opacity="0.9"/>
+    <ellipse cx="140" cy="140" rx="120" ry="90" fill="#1E4D2B" opacity="0.95"/>
+    <ellipse cx="140" cy="60" rx="90" ry="70" fill="#52B788" opacity="0.8"/>
+  </g>
+
+  <!-- Professional Arborist Crane & Safety Rigging Rig -->
+  <g transform="translate(420, 60)">
+    <!-- Crane Boom Arm extending with safety angle -->
+    <line x1="380" y1="460" x2="60" y2="40" stroke="#E89818" stroke-width="12" stroke-linecap="round"/>
+    <line x1="380" y1="460" x2="60" y2="40" stroke="#14361E" stroke-width="4" stroke-dasharray="16 8"/>
+    <!-- Pulley & High-Tension Rigging Cable -->
+    <circle cx="60" cy="40" r="14" fill="#C77F12" stroke="#FAFAF7" stroke-width="3"/>
+    <line x1="60" y1="54" x2="60" y2="200" stroke="#FAFAF7" stroke-width="3" stroke-dasharray="4 2"/>
+    <!-- Controlled Dismantled Log Section on Rigging Harness -->
+    <rect x="30" y="200" width="60" height="24" rx="6" fill="#8D6E63" stroke="#FAFAF7" stroke-width="2"/>
+    <path d="M60 190 L40 200 M60 190 L80 200" stroke="#E89818" stroke-width="3"/>
+  </g>
+
+  <!-- Foreground Manicured Lawn and Work Zone -->
+  <path d="M0 540 Q300 520 600 535 T1200 520 L1200 675 L0 675 Z" fill="#1E4D2B"/>
+  <path d="M0 570 Q400 550 800 565 T1200 550 L1200 675 L0 675 Z" fill="#14361E"/>
+
+  <!-- Sunbeam highlight overlay -->
+  <polygon points="0,0 600,0 800,675 0,675" fill="url(#sunbeam)"/>
+
+  <!-- High-Contrast Cinematic Brand Overlay Tint -->
+  <rect width="1200" height="675" fill="url(#overlayDark)"/>
+
+  <!-- Badge Emblem in Corner of Hero -->
+  <g transform="translate(1020, 40)" filter="drop-shadow(0 4px 12px rgba(0,0,0,0.5))">
+    <rect width="140" height="50" rx="8" fill="#14361E" stroke="#E89818" stroke-width="2"/>
+    <text x="70" y="24" font-family="'Montserrat', sans-serif" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">
+      100% INSURED
+    </text>
+    <text x="70" y="40" font-family="'Inter', sans-serif" font-size="9" font-weight="700" fill="#E89818" text-anchor="middle">
+      LAD OBORNY • OWNER
+    </text>
+  </g>
+</svg>

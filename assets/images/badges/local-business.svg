@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" class="trust-badge-svg">
+  <defs>
+    <linearGradient id="localGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D723E"/>
+      <stop offset="100%" stop-color="#14361E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Base -->
+  <circle cx="80" cy="80" r="76" fill="#FAFAF7" stroke="#1E4D2B" stroke-width="4"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#E89818" stroke-width="1.5"/>
+
+  <!-- Kansas State Pin & House Silhouette -->
+  <g transform="translate(48, 30)">
+    <!-- Map Pin Shape -->
+    <path d="M32 0 C14.3 0 0 14.3 0 32 C0 56 32 80 32 80 C32 80 64 56 64 32 C64 14.3 49.7 0 32 0 Z" fill="url(#localGrad)" stroke="#E89818" stroke-width="2"/>
+    <!-- Arborist Tree inside Pin -->
+    <path d="M32 14 C26 14 20 18 20 24 C17 25 15 28 15 31 C15 35 18 38 22 38 L22 46 L42 46 L42 38 C46 38 49 35 49 31 C49 28 47 25 44 24 C44 18 38 14 32 14 Z" fill="#FFFFFF"/>
+    <rect x="29" y="38" width="6" height="12" fill="#E89818"/>
+  </g>
+
+  <!-- Bottom Ribbon -->
+  <rect x="14" y="116" width="132" height="26" rx="6" fill="#14361E" stroke="#E89818" stroke-width="1.5"/>
+  <text x="80" y="133" font-family="'Montserrat', sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+    OWNED BY LAD OBORNY
+  </text>
+  <text x="80" y="24" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#E89818" text-anchor="middle" letter-spacing="0.8">
+    LOCALLY OPERATED
+  </text>
+</svg>

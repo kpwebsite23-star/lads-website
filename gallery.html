@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Gallery &amp; Our Work | LC Tree and Landscaping | Wichita &amp; Andover</title>
+  <meta name="description" content="Browse recent tree removals, canopy trimming, stump grinding, and landscaping projects completed across South Central Kansas, KS. See the LC difference. Call 316-393-7207.">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+</head>
+<body>
+  <!-- Header Landmark -->
+  <header class="site-header">
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+      <div class="container top-bar-container">
+        <div class="top-bar-text">
+          <span>Serving East Wichita, Andover, &amp; Surrounding Areas | Premium Tree Care &amp; Landscaping</span>
+        </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="header-main">
+      <div class="container header-container">
+        <a href="index.html" class="logo" aria-label="LC Tree and Landscaping, LLC Home">
+          <img src="assets/images/logo.jpg" alt="LC Tree and Landscaping, LLC" class="logo-img" width="52" height="52">
+        </a>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-item has-dropdown">
+              <a href="services.html" class="nav-link" aria-haspopup="true" aria-expanded="false">
+                Services
+                <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              </a>
+              <ul class="dropdown-menu" aria-label="Services Submenu">
+                <li><a href="services.html#tree-removal" class="dropdown-item">Tree Removal</a></li>
+                <li><a href="services.html#tree-trimming" class="dropdown-item">Tree Trimming &amp; Pruning</a></li>
+                <li><a href="services.html#stump-grinding" class="dropdown-item">Stump Grinding</a></li>
+                <li><a href="services.html#landscaping" class="dropdown-item">Landscaping</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link active" aria-current="page">Gallery</a></li>
+            <li class="nav-item"><a href="testimonials.html" class="nav-link">Testimonials</a></li>
+            <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item nav-item-estimate"><a href="estimate.html" class="nav-link nav-link-highlight">Free Estimate</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="tel:3163937207" class="btn btn-primary cta-btn" aria-label="Call LC Tree and Landscaping now at 316-393-7207">
+            <svg class="icon icon-phone" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>Call Now: 316-393-7207</span>
+          </a>
+          <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Page Header Banner -->
+    <section class="page-header bg-dark-slate text-white" aria-labelledby="gallery-page-title">
+      <div class="container">
+        <div class="page-header-content text-center max-w-750">
+          <span class="section-eyebrow text-amber">OUR WORK &amp; RECENT PROJECTS</span>
+          <h1 id="gallery-page-title" class="page-title">See The LC Difference</h1>
+          <p class="page-subtitle text-light">Explore our completed tree removals, canopy trimming, stump grinding, and landscaping projects across South Central Kansas. Every photo reflects our dedication to safety, precision, and immaculate cleanup.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filterable Portfolio Grid Section -->
+    <section class="section gallery-section" aria-labelledby="portfolio-grid-title">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2 id="portfolio-grid-title" class="section-title">Proven Results Across Kansas Properties</h2>
+          <p class="section-description">Filter by service type to see how our owner and our skilled crew safely manage complex tree removals and elevate landscape aesthetics.</p>
+        </div>
+
+        <!-- Filter Buttons Bar -->
+        <div class="gallery-filter-controls text-center" role="toolbar" aria-label="Filter gallery projects">
+          <button type="button" class="btn btn-filter gallery-filter-btn active" data-filter="all" aria-pressed="true">All Projects</button>
+          <button type="button" class="btn btn-filter gallery-filter-btn" data-filter="removal" aria-pressed="false">Tree Removal</button>
+          <button type="button" class="btn btn-filter gallery-filter-btn" data-filter="trimming" aria-pressed="false">Tree Trimming</button>
+          <button type="button" class="btn btn-filter gallery-filter-btn" data-filter="stump-grinding" aria-pressed="false">Stump Grinding</button>
+          <button type="button" class="btn btn-filter gallery-filter-btn" data-filter="landscaping" aria-pressed="false">Landscaping</button>
+        </div>
+
+        <!-- Portfolio Grid -->
+        <div class="gallery-grid grid-3" id="gallery-grid">
+          <!-- Item 1: Tree Removal (Andover) -->
+          <article class="gallery-card gallery-item" data-category="removal" data-full-img="assets/images/tree-removal.svg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/tree-removal.svg" alt="Hazardous Oak and Cottonwood Removal in Andover" width="400" height="280" class="gallery-img" loading="lazy">
+              <span class="gallery-badge badge-primary">Tree Removal</span>
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span class="gallery-location">📍 Andover, KS</span>
+                  <h3 class="gallery-card-title">Hazardous Oak Removal in Andover</h3>
+                  <p class="gallery-card-desc">Controlled sectional dismantling of a decaying 60-foot oak positioned directly between a pool deck and fence line. Rigged and lowered with zero property damage.</p>
+                  <span class="gallery-zoom-btn" aria-hidden="true">🔍 Click to Enlarge</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 2: Tree Removal (East Wichita) -->
+          <article class="gallery-card gallery-item" data-category="removal" data-full-img="assets/images/hero-tree-work.svg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/hero-tree-work.svg" alt="Emergency Storm Damage Clearing in East Wichita" width="400" height="280" class="gallery-img" loading="lazy">
+              <span class="gallery-badge badge-primary">Tree Removal</span>
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span class="gallery-location">📍 East Wichita, KS</span>
+                  <h3 class="gallery-card-title">Emergency Storm Damage Clearing in East Wichita</h3>
+                  <p class="gallery-card-desc">Rapid removal of a heavy elm limb suspended above a two-story residential roof following a severe thunderstorm. Extracted cleanly without a single shingle scratched.</p>
+                  <span class="gallery-zoom-btn" aria-hidden="true">🔍 Click to Enlarge</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 3: Tree Trimming (East Wichita) -->
+          <article class="gallery-card gallery-item" data-category="trimming" data-full-img="assets/images/tree-trimming.svg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/tree-trimming.svg" alt="Crown Thinning & Canopy Lift in East Wichita" width="400" height="280" class="gallery-img" loading="lazy">
+              <span class="gallery-badge badge-secondary">Tree Trimming</span>
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span class="gallery-location">📍 East Wichita, KS</span>
+                  <h3 class="gallery-card-title">Crown Thinning &amp; Canopy Lift in East Wichita</h3>
+                  <p class="gallery-card-desc">Elevated mature pin oak canopy 15 feet over driveway and roof line. Improved sunlight penetration to lawn and removed hazardous deadwood.</p>
+                  <span class="gallery-zoom-btn" aria-hidden="true">🔍 Click to Enlarge</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 4: Tree Trimming (Andover) -->
+          <article class="gallery-card gallery-item" data-category="trimming" data-full-img="assets/images/tree-trimming.svg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/tree-trimming.svg" alt="Ornamental Maple Shaping & Pruning in Andover" width="400" height="280" class="gallery-img" loading="lazy">
+              <span class="gallery-badge badge-secondary">Tree Trimming</span>
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span class="gallery-location">📍 Andover, KS</span>
+                  <h3 class="gallery-card-title">Ornamental Maple Shaping in Andover</h3>
+                  <p class="gallery-card-desc">Artistic structural thinning and corrective pruning of two specimen Japanese maples and a silver maple, restoring natural branch architecture.</p>
+                  <span class="gallery-zoom-btn" aria-hidden="true">🔍 Click to Enlarge</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 5: Stump Grinding (Andover) -->
+          <article class="gallery-card gallery-item" data-category="stump-grinding" data-full-img="assets/images/stump-grinding.svg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/stump-grinding.svg" alt="Deep Double Elm Stump Grinding in Andover" width="400" height="280" class="gallery-img" loading="lazy">
+              <span class="gallery-badge badge-dark">Stump Grinding</span>
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span class="gallery-location">📍 Andover, KS</span>
+                  <h3 class="gallery-card-title">Deep Double Elm Stump Grinding in Andover</h3>
+                  <p class="gallery-card-desc">Ground twin 36-inch elm stumps 12 inches below grade, tracked expansive surface root flares, and leveled site with fresh mulch backfill.</p>
+                  <span class="gallery-zoom-btn" aria-hidden="true">🔍 Click to Enlarge</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 6: Stump Grinding (East Wichita) -->
+          <article class="gallery-card gallery-item" data-category="stump-grinding" data-full-img="assets/images/stump-grinding.svg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/stump-grinding.svg" alt="Driveway Perimeter Stump Removal in East Wichita" width="400" height="280" class="gallery-img" loading="lazy">
+              <span class="gallery-badge badge-dark">Stump Grinding</span>
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span class="gallery-location">📍 East Wichita, KS</span>
+                  <h3 class="gallery-card-title">Driveway Perimeter Stump Removal in East Wichita</h3>
+                  <p class="gallery-card-desc">Precision grinding along concrete driveway edge with zero surface cracking. Restored grade ready for immediate grass reseeding.</p>
+                  <span class="gallery-zoom-btn" aria-hidden="true">🔍 Click to Enlarge</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 7: Landscaping (East Wichita) -->
+          <article class="gallery-card gallery-item" data-category="landscaping" data-full-img="assets/images/landscaping.svg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/landscaping.svg" alt="Front Yard Bed Transformation & Mulch in East Wichita" width="400" height="280" class="gallery-img" loading="lazy">
+              <span class="gallery-badge badge-accent">Landscaping</span>
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span class="gallery-location">📍 East Wichita, KS</span>
+                  <h3 class="gallery-card-title">Front Yard Bed Transformation in East Wichita</h3>
+                  <p class="gallery-card-desc">Deep trench spade edging, shrub shaping, weed barrier fabric installation, and premium double-shredded dark hardwood mulch application.</p>
+                  <span class="gallery-zoom-btn" aria-hidden="true">🔍 Click to Enlarge</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Item 8: Landscaping (Andover) -->
+          <article class="gallery-card gallery-item" data-category="landscaping" data-full-img="assets/images/landscaping.svg">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/landscaping.svg" alt="Seasonal Shrub Rejuvenation & Yard Cleanup in Andover" width="400" height="280" class="gallery-img" loading="lazy">
+              <span class="gallery-badge badge-accent">Landscaping</span>
+              <div class="gallery-overlay">
+                <div class="gallery-overlay-content">
+                  <span class="gallery-location">📍 Andover, KS</span>
+                  <h3 class="gallery-card-title">Seasonal Shrub Rejuvenation in Andover</h3>
+                  <p class="gallery-card-desc">Complete spring property refresh including hand-pruned boxwood hedges, perennial bed clearing, and thorough debris haul-away.</p>
+                  <span class="gallery-zoom-btn" aria-hidden="true">🔍 Click to Enlarge</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Before & After Comparison Showcase -->
+    <section class="section bg-light before-after-section" aria-labelledby="before-after-title">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-eyebrow text-green">TRANSFORMATION SPOTLIGHT</span>
+          <h2 id="before-after-title" class="section-title">Interactive Before &amp; After Comparison</h2>
+          <p class="section-description">Drag the slider left and right to see the dramatic difference our arborist team achieved on this complex Andover property.</p>
+        </div>
+
+        <div class="slider-wrapper max-w-900 mx-auto">
+          <div class="before-after-slider" aria-label="Interactive image comparison slider">
+            <!-- After Image (Base) -->
+            <div class="slider-image slider-image-after">
+              <img src="assets/images/before-after-2.svg" alt="After: Cleanly removed tree with spotless lawn and undamaged roof" width="900" height="500" class="comparison-img">
+              <span class="slider-label label-after">AFTER (LC CLEANUP)</span>
+            </div>
+
+            <!-- Before Image (Overlay) -->
+            <div class="slider-image slider-image-before">
+              <img src="assets/images/before-after-1.svg" alt="Before: Dense decaying tree overhanging roof and patio" width="900" height="500" class="comparison-img">
+              <span class="slider-label label-before">BEFORE (HAZARD)</span>
+            </div>
+
+            <!-- Draggable Handle -->
+            <div class="slider-handle" role="slider" aria-label="Comparison slider position" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" tabindex="0">
+              <div class="slider-handle-line"></div>
+              <div class="slider-handle-button">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </div>
+            </div>
+            <input type="range" class="slider-range sr-only" min="0" max="100" value="50" aria-label="Adjust Before and After image comparison percentage">
+          </div>
+          <p class="slider-caption text-center text-muted mt-3">Drag handle horizontally or use touch swipe to inspect the work.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Project Video Section -->
+    <section class="section featured-video-section" id="featured-project-video" aria-labelledby="featured-video-title">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-eyebrow text-amber">ON-SITE RIGGING &amp; SAFETY DEMONSTRATION</span>
+          <h2 id="featured-video-title" class="section-title">Precision Tree Removal in Tight Quarters</h2>
+          <p class="section-description">Watch how our owner and our team safely rig, lower, and process massive tree limbs in residential yards with zero property impact.</p>
+        </div>
+
+        <div class="video-container-wrap max-w-900 mx-auto">
+          <div class="video-container aspect-16-9">
+            <video class="project-video-player" poster="assets/images/hero-tree-work.svg" controls preload="metadata">
+              <source src="assets/images/hero-tree-work.svg" type="video/mp4">
+              Your browser does not support HTML5 video streaming. Please call 316-393-7207 for on-site project consultations.
+            </video>
+            <div class="video-overlay-badge">
+              <span>🎥 Andover Residential Job Site Demo</span>
+            </div>
+          </div>
+          
+          <div class="video-details-card card mt-4">
+            <div class="video-highlights-grid">
+              <div class="video-highlight-item">
+                <strong>🛡️ Property Protection:</strong> Heavy turf mats used under all equipment to protect delicate lawns.
+              </div>
+              <div class="video-highlight-item">
+                <strong>⚙️ Controlled Rigging:</strong> High-tensile friction brakes ensure heavy timber never free-falls.
+              </div>
+              <div class="video-highlight-item">
+                <strong>🧹 Immaculate Cleanup:</strong> Raking, chipping, and commercial blowing leave the yard spotless.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal Markup -->
+    <div id="gallery-lightbox" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-title">
+      <div class="lightbox-backdrop"></div>
+      <div class="lightbox-dialog">
+        <button type="button" class="lightbox-close" data-close-lightbox aria-label="Close image modal">&times;</button>
+        <button type="button" class="lightbox-prev" data-prev-lightbox aria-label="Previous image">&#10094;</button>
+        <button type="button" class="lightbox-next" data-next-lightbox aria-label="Next image">&#10095;</button>
+        
+        <div class="lightbox-content">
+          <div class="lightbox-media">
+            <img src="assets/images/tree-removal.svg" alt="Project preview" id="lightbox-image" class="lightbox-img">
+          </div>
+          <div class="lightbox-info">
+            <span class="badge lightbox-category" id="lightbox-category">Tree Removal</span>
+            <h3 class="lightbox-title" id="lightbox-title">Project Title</h3>
+            <p class="lightbox-caption" id="lightbox-caption">Project Description</p>
+            <div class="lightbox-cta-wrap">
+              <a href="estimate.html" class="btn btn-primary btn-sm">Request an Estimate for This Service</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </main>
+
+  <!-- 4-Column Global Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand & Contact -->
+        <div class="footer-col footer-col-brand">
+          <a href="index.html" class="footer-logo-link" aria-label="LC Tree and Landscaping Home">
+            <img src="assets/images/logo.jpg" alt="LC Tree and Landscaping, LLC" width="60" height="60" class="footer-logo-img">
+          </a>
+          <p class="footer-tagline">Premium tree removal, precision trimming, stump grinding, and landscaping in South Central Kansas with direct owner accountability.</p>
+          <div class="footer-contact-details">
+            
+            <p class="footer-phone"><a href="tel:3163937207">📞 316-393-7207</a></p>
+            <p class="footer-email"><a href="mailto:info@lctreeks.com">✉️ info@lctreeks.com</a></p>
+            <p class="footer-hours">🕒 Mon–Sat: 7:00 AM – 7:00 PM<br><span class="emergency-text">24/7 Emergency Storm Service</span></p>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-col footer-col-nav">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="gallery.html">Our Work / Gallery</a></li>
+            <li><a href="estimate.html" class="footer-highlight-link">Request an Estimate</a></li>
+            <li><a href="testimonials.html">Customer Reviews</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Core Services -->
+        <div class="footer-col footer-col-services">
+          <h3 class="footer-col-title">Core Services</h3>
+          <ul class="footer-links-list">
+            <li><a href="services.html#tree-removal">Tree Removal (Hazardous &amp; Large)</a></li>
+            <li><a href="services.html#tree-trimming">Tree Trimming &amp; Canopy Pruning</a></li>
+            <li><a href="services.html#stump-grinding">Stump Grinding &amp; Root Removal</a></li>
+            <li><a href="services.html#landscaping">Residential Landscaping &amp; Cleanup</a></li>
+            <li><a href="services.html#tree-removal">Emergency Storm Damage Service</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Service Areas & Trust Badges -->
+        <div class="footer-col footer-col-trust">
+          <h3 class="footer-col-title">Service Areas &amp; Trust</h3>
+          <p class="footer-service-area">Proudly Serving <strong>East Wichita, Andover</strong>, Augusta, Derby, Rose Hill, Bel Aire, and Surrounding Communities.</p>
+          <div class="footer-trust-badges">
+            <div class="footer-badge-item">
+              <img src="assets/images/badges/fully-insured.svg" alt="Fully Insured &amp; Safe Badge" width="36" height="36" class="trust-badge-img">
+              <div class="badge-text">
+                <strong>Fully Insured &amp; Bonded</strong>
+                <span>Comprehensive Property Protection</span>
+              </div>
+            </div>
+            <div class="footer-badge-item">
+              <img src="assets/images/badges/five-star.svg" alt="5-Star Rated Service Badge" width="36" height="36" class="trust-badge-img">
+              <div class="badge-text">
+                <strong>5-Star Rated Service</strong>
+                <span>Top-Rated in Andover &amp; Wichita</span>
+              </div>
+            </div>
+            <div class="footer-badge-item">
+              <img src="assets/images/badges/local-business.svg" alt="Locally Owned & Operated Badge" width="36" height="36" class="trust-badge-img">
+              <div class="badge-text">
+                <strong>Locally Owned & Operated</strong>
+                <span>Direct Owner Accountability</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sub-Footer / Legal Bar -->
+    <div class="sub-footer">
+      <div class="container sub-footer-container">
+        <p class="copyright-text">&copy; <span id="current-year">2026</span> LC Tree and Landscaping, LLC. All Rights Reserved.</p>
+        <div class="sub-footer-links">
+          <a href="contact.html">Privacy Policy</a>
+          <span class="divider">•</span>
+          <a href="estimate.html">Free Estimates</a>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+<!-- LABELS SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const prefix = 'D';
+  const mediaElements = document.querySelectorAll('img:not(.footer-logo-img):not(.trust-badge-img):not(.trust-icon):not(.header-logo-img), video');
+  
+  let count = 1;
+  const labels = [];
+  
+  mediaElements.forEach(el => {
+    if (el.closest('.footer-col-trust') || el.closest('.site-header') || el.classList.contains('icon') || el.closest('.service-features-list')) return;
+
+    const label = document.createElement('div');
+    label.textContent = prefix + (count++);
+    label.style.position = 'absolute';
+    label.style.background = 'rgba(255, 0, 0, 0.9)';
+    label.style.color = 'white';
+    label.style.padding = '4px 8px';
+    label.style.fontSize = '14px';
+    label.style.fontWeight = 'bold';
+    label.style.zIndex = '999999';
+    label.style.borderRadius = '0 0 4px 0';
+    label.style.pointerEvents = 'none';
+    label.style.fontFamily = 'monospace';
+    document.body.appendChild(label);
+    
+    labels.push({ el, label });
+  });
+
+  const updatePositions = () => {
+    labels.forEach(({ el, label }) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.width > 0 && rect.height > 0) {
+        label.style.display = 'block';
+        label.style.top = (window.scrollY + rect.top) + 'px';
+        label.style.left = (window.scrollX + rect.left) + 'px';
+      } else {
+        label.style.display = 'none';
+      }
+    });
+  };
+
+  window.addEventListener('resize', updatePositions);
+  window.addEventListener('scroll', updatePositions);
+  updatePositions();
+  setInterval(updatePositions, 1000); // Check repeatedly just in case layout shifts
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,467 @@
+/* ==========================================================================
+   LC TREE AND LANDSCAPING, LLC — RESPONSIVE STYLESHEET
+   Breakpoints, Mobile Drawer Navigation, Tap-to-Call Bar, Grid Collapses
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. TABLET & BELOW (< 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  /* Show Mobile Hamburger Button */
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  /* Transform Main Nav into Off-Canvas Slide Drawer */
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    max-width: 85vw;
+    height: 100vh;
+    height: 100dvh;
+    background-color: #FFFFFF;
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.2);
+    z-index: 1050;
+    padding: 5rem 1.5rem 2rem 1.5rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    transform: translateX(100%);
+    transition: transform var(--transition-smooth);
+    overflow-y: auto;
+    border-left: 3px solid var(--color-primary);
+  }
+
+  .site-header.nav-open .main-nav {
+    transform: translateX(0);
+  }
+
+  /* Nav Backdrop Overlay */
+  .nav-backdrop {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 32, 18, 0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1040;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+  }
+
+  .site-header.nav-open ~ .nav-backdrop,
+  body.nav-open .nav-backdrop {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Mobile Nav Item Stacking */
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.35rem;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1.05rem;
+    padding: 0.85rem 1rem;
+    justify-content: space-between;
+    border-radius: var(--radius-md);
+  }
+
+  .nav-link.active::after {
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    height: 100%;
+    border-radius: var(--radius-sm);
+  }
+
+  /* Mobile Services Dropdown Accordion */
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    border-left: 2px solid var(--color-accent);
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+    padding: 0.25rem 0 0.25rem 0.5rem;
+    background-color: var(--color-bg-subtle);
+    display: none;
+  }
+
+  .has-dropdown.dropdown-open .dropdown-menu {
+    display: block;
+  }
+
+  .has-dropdown.dropdown-open .nav-link .chevron-icon {
+    transform: rotate(180deg);
+  }
+
+  /* Mobile Drawer In-Menu Actions */
+  .nav-drawer-cta {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .nav-drawer-cta .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Footer Layout Collapse to 2 Columns */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+  }
+
+  /* Trust Bar Collapse to 2 Columns */
+  .trust-bar-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  /* Grid Layouts */
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* LC Difference & Proof Section Stacking */
+  .split-layout,
+  .lc-diff-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .lc-diff-media {
+    order: -1;
+  }
+
+  .proof-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. MOBILE BREAKPOINT (< 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  /* Top Bar Adaptation */
+  .top-bar-contact {
+    display: none;
+  }
+
+  .top-bar-container {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .top-bar-location {
+    font-size: 0.75rem;
+  }
+
+  /* Header Spacing */
+  .site-header {
+    height: auto;
+  }
+
+  .header-container {
+    height: 64px;
+    gap: 0.75rem;
+  }
+
+  .logo-img {
+    height: 42px;
+    max-height: 42px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  .footer-logo-img,
+  .footer-logo {
+    height: 52px;
+    max-height: 52px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  /* Header CTA Button on Mobile (Compact or Icon) */
+  .btn-header-cta {
+    font-size: 0.8125rem;
+    padding: 0.55rem 0.85rem;
+  }
+
+  .btn-header-cta span.desktop-only-text {
+    display: none;
+  }
+
+  /* Hero Adjustments */
+  .hero-section {
+    min-height: auto;
+    padding: var(--space-lg) 0;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .hero-trust-indicators {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  /* Trust Bar Collapse to Single Column */
+  .trust-bar-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .trust-bar-item {
+    background-color: #FFFFFF;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--color-border);
+  }
+
+  /* Grid Layouts Stack */
+  .grid-4,
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer Layout Collapse to Single Column */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  .footer-col {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: var(--space-md);
+  }
+
+  .footer-col:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* Proof & Slider Mobile Adjustments */
+  .slider-wrapper {
+    padding: 0 1rem;
+  }
+
+  .proof-card-header {
+    padding: 1rem 1rem 0.75rem;
+  }
+
+  .proof-card-footer {
+    padding: 0.75rem 1rem 1rem;
+  }
+
+  .video-cue-points {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .hero-micro-trust {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Sub-Footer Stacking */
+  .sub-footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .sub-footer-links {
+    justify-content: center;
+  }
+
+  /* Pre-Footer CTA Stacking */
+  .pre-footer-container {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .pre-footer-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .pre-footer-actions .btn {
+    width: 100%;
+  }
+
+  /* Persistent Mobile Bottom Tap-to-Call Action Bar */
+  .mobile-call-bar {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-bg-darkest);
+    border-top: 2px solid var(--color-accent);
+    padding: 0.75rem 1rem;
+    padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.25);
+    z-index: 999;
+  }
+
+  .mobile-call-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    background-color: var(--color-accent);
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 0.85rem 1.25rem;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-cta);
+  }
+
+  .mobile-call-btn:active {
+    background-color: var(--color-accent-hover);
+    transform: scale(0.98);
+  }
+
+  .mobile-call-btn .icon {
+    width: 20px;
+    height: 20px;
+    stroke: #FFFFFF;
+  }
+
+  /* Add padding to body on mobile so content isn't covered by bottom bar */
+  body {
+    padding-bottom: 74px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. EXTRA SMALL MOBILE BREAKPOINT (< 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  :root {
+    --container-padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.85rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .section {
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-lg);
+  }
+
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9375rem;
+  }
+
+  .form-card {
+    padding: 1.25rem;
+  }
+
+  .service-card-media {
+    height: 180px;
+  }
+
+  .before-after-container {
+    aspect-ratio: 1 / 1;
+  }
+
+  .after-img-wrap .before-after-img {
+    width: 100vw;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. DESKTOP ONLY UTILITIES (> 1024px)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1025px) {
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+
+  .nav-backdrop {
+    display: none !important;
+  }
+
+  .nav-drawer-cta {
+    display: none !important;
+  }
+
+  .mobile-call-bar {
+    display: none !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. PRINT STYLESHEET
+   -------------------------------------------------------------------------- */
+@media print {
+  .top-bar,
+  .site-header,
+  .mobile-call-bar,
+  .pre-footer-cta,
+  .btn,
+  .gallery-filter-bar,
+  .before-after-slider,
+  .video-container {
+    display: none !important;
+  }
+
+  body {
+    background: #FFFFFF;
+    color: #000000;
+    font-size: 12pt;
+    padding-bottom: 0;
+  }
+
+  .site-footer {
+    background: #FFFFFF;
+    color: #000000;
+    border-top: 1px solid #000000;
+  }
+}

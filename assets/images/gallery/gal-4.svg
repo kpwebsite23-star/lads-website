@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none" class="gallery-img-svg">
+  <defs>
+    <linearGradient id="gal4Bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#37474F"/>
+      <stop offset="100%" stop-color="#263238"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#gal4Bg)"/>
+  <!-- Storm Damage Emergency Removal -->
+  <path d="M120 400 L240 220 L380 320" stroke="#8D6E63" stroke-width="24" stroke-linecap="round"/>
+  <ellipse cx="240" cy="220" rx="60" ry="45" fill="#2D723E" opacity="0.8"/>
+  <line x1="300" y1="80" x2="240" y2="220" stroke="#E89818" stroke-width="6" stroke-dasharray="8 4"/>
+  <rect x="0" y="380" width="600" height="70" fill="#14361E"/>
+  <rect x="30" y="30" width="330" height="40" rx="8" fill="#D32F2F" stroke="#FFFFFF" stroke-width="1.5"/>
+  <text x="195" y="55" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">
+    Storm Emergency Response • Wichita
+  </text>
+</svg>

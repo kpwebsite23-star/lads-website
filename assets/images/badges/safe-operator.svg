@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" class="trust-badge-svg">
+  <!-- Outer Ring -->
+  <circle cx="80" cy="80" r="76" fill="#FAFAF7" stroke="#E89818" stroke-width="4"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#1E4D2B" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+  <!-- Clean Yard & Certified Icon -->
+  <g transform="translate(45, 34)">
+    <!-- Tree & Sparkling Yard -->
+    <circle cx="35" cy="30" r="28" fill="#E8F5E9" stroke="#1E4D2B" stroke-width="2"/>
+    <!-- Sparkle Stars -->
+    <path d="M54 12 L56 18 L62 20 L56 22 L54 28 L52 22 L46 20 L52 18 Z" fill="#E89818"/>
+    <path d="M16 16 L17 20 L21 21 L17 22 L16 26 L15 22 L11 21 L15 20 Z" fill="#E89818"/>
+    <!-- House outline with pristine lawn -->
+    <polygon points="35,18 20,32 50,32" fill="#14361E"/>
+    <rect x="25" y="32" width="20" height="16" fill="#2D723E"/>
+    <rect x="31" y="38" width="8" height="10" fill="#FAFAF7"/>
+  </g>
+
+  <!-- Bottom Ribbon -->
+  <rect x="12" y="116" width="136" height="26" rx="6" fill="#1E4D2B" stroke="#E89818" stroke-width="1.5"/>
+  <text x="80" y="133" font-family="'Montserrat', sans-serif" font-size="8.5" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+    ZERO DAMAGE • CLEAN YARDS
+  </text>
+  <text x="80" y="24" font-family="'Inter', sans-serif" font-size="8" font-weight="700" fill="#14361E" text-anchor="middle" letter-spacing="0.8">
+    PROPERTY PROTECTION
+  </text>
+</svg>

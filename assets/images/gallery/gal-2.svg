@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none" class="gallery-img-svg">
+  <defs>
+    <linearGradient id="gal2Bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="100%" stop-color="#C8E6C9"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#gal2Bg)"/>
+  <!-- Sculpted Tree Canopy in East Wichita -->
+  <g transform="translate(160, 60)">
+    <path d="M120 320 C110 240 90 180 60 140 C100 160 130 190 140 230 C150 180 180 150 220 130 C190 180 170 230 160 320 Z" fill="#4E342E"/>
+    <ellipse cx="60" cy="110" rx="90" ry="70" fill="#2D723E"/>
+    <ellipse cx="220" cy="100" rx="95" ry="75" fill="#3D8B52"/>
+    <ellipse cx="140" cy="50" rx="100" ry="80" fill="#52B788"/>
+  </g>
+  <rect x="0" y="380" width="600" height="70" fill="#1E4D2B"/>
+  <rect x="30" y="30" width="310" height="40" rx="8" fill="rgba(20,54,30,0.9)" stroke="#E89818" stroke-width="1.5"/>
+  <text x="185" y="55" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">
+    Canopy Elevation • East Wichita, KS
+  </text>
+</svg>

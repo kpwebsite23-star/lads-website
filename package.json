@@ -1,0 +1,20 @@
+{
+  "name": "lc-tree-and-landscaping-website",
+  "version": "1.0.0",
+  "description": "High-converting multi-page website for LC Tree and Landscaping, LLC serving East Wichita & Andover, KS",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/verify_website.js",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "tree-service",
+    "landscaping",
+    "wichita",
+    "andover",
+    "tree-removal",
+    "tree-trimming"
+  ],
+  "author": "LC Tree and Landscaping, LLC",
+  "license": "ISC"
+}

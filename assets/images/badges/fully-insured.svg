@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" class="trust-badge-svg">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E4D2B"/>
+      <stop offset="100%" stop-color="#14361E"/>
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5B041"/>
+      <stop offset="100%" stop-color="#C77F12"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Circular Outer Border -->
+  <circle cx="80" cy="80" r="76" fill="#FAFAF7" stroke="url(#goldRing)" stroke-width="4"/>
+  <circle cx="80" cy="80" r="70" fill="none" stroke="#1E4D2B" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+  <!-- Center Shield -->
+  <path d="M80 32 L116 48 C116 82 80 108 80 108 C80 108 44 82 44 48 Z" fill="url(#shieldGrad)" stroke="#E89818" stroke-width="3"/>
+
+  <!-- Checkmark inside Shield -->
+  <path d="M62 66 L74 78 L98 54" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Curved / Ribbon Text -->
+  <rect x="20" y="116" width="120" height="26" rx="6" fill="#14361E" stroke="#E89818" stroke-width="1.5"/>
+  <text x="80" y="133" font-family="'Montserrat', sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="0.5">
+    100% FULLY INSURED
+  </text>
+  <text x="80" y="24" font-family="'Inter', sans-serif" font-size="8.5" font-weight="700" fill="#2D723E" text-anchor="middle" letter-spacing="1">
+    SAFETY GUARANTEED
+  </text>
+</svg>

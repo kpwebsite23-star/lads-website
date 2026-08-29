@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none" class="gallery-img-svg">
+  <defs>
+    <linearGradient id="gal3Bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFEBE9"/>
+      <stop offset="100%" stop-color="#D7CCC8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#gal3Bg)"/>
+  <!-- Stump Grinding Site -->
+  <g transform="translate(180, 160)">
+    <ellipse cx="120" cy="140" rx="90" ry="40" fill="#8D6E63"/>
+    <ellipse cx="120" cy="140" rx="60" ry="25" fill="#BCAAA4"/>
+    <circle cx="120" cy="140" r="15" fill="#E89818"/>
+  </g>
+  <rect x="0" y="360" width="600" height="90" fill="#1E4D2B"/>
+  <rect x="30" y="30" width="310" height="40" rx="8" fill="rgba(20,54,30,0.9)" stroke="#E89818" stroke-width="1.5"/>
+  <text x="185" y="55" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" fill="#FFFFFF" text-anchor="middle">
+    Stump Grinding &amp; Lawn Seed • Andover
+  </text>
+</svg>

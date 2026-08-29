@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" fill="none" class="before-after-svg">
+  <defs>
+    <linearGradient id="sunnySky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#81D4FA"/>
+      <stop offset="50%" stop-color="#E1F5FE"/>
+      <stop offset="100%" stop-color="#FAFAF7"/>
+    </linearGradient>
+    <linearGradient id="healthyLawn" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D723E"/>
+      <stop offset="100%" stop-color="#14361E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Clear Sunny Sky Backdrop -->
+  <rect width="600" height="450" fill="url(#sunnySky)"/>
+
+  <!-- Warm Kansas Sun -->
+  <circle cx="500" cy="80" r="45" fill="#FFE082" stroke="#F5B041" stroke-width="4"/>
+  <circle cx="500" cy="80" r="55" fill="none" stroke="#FFE082" stroke-width="2" stroke-dasharray="6 6"/>
+
+  <!-- Pristine Residential House Roof (Clean, Undamaged, Sunshine) -->
+  <g transform="translate(40, 180)">
+    <polygon points="100,20 280,180 -40,180" fill="#37474F"/>
+    <polygon points="340,60 480,180 200,180" fill="#263238"/>
+    <rect x="0" y="180" width="500" height="120" fill="#FAFAF7"/>
+    <!-- Gutters & Windows -->
+    <rect x="-40" y="175" width="520" height="10" fill="#CFD8DC"/>
+    <rect x="40" y="210" width="80" height="70" fill="#81D4FA" stroke="#37474F" stroke-width="2"/>
+    <rect x="220" y="210" width="80" height="70" fill="#81D4FA" stroke="#37474F" stroke-width="2"/>
+  </g>
+
+  <!-- Safe, Clean Sky Where Hazardous Tree Used to Be -->
+  <!-- Pristine, Manicured Yard with Spotless Cleanup -->
+  <rect x="0" y="380" width="600" height="70" fill="url(#healthyLawn)"/>
+  <line x1="0" y1="380" x2="600" y2="380" stroke="#52B788" stroke-width="4"/>
+
+  <!-- Beautiful New Shrub & Seeded Area where tree was safely removed -->
+  <g transform="translate(420, 320)">
+    <ellipse cx="40" cy="60" rx="35" ry="25" fill="#52B788"/>
+    <ellipse cx="40" cy="55" rx="25" ry="18" fill="#81C784"/>
+    <!-- Sparkle / Cleanliness Guarantee Star -->
+    <path d="M70 20 L73 30 L83 33 L73 36 L70 46 L67 36 L57 33 L67 30 Z" fill="#E89818"/>
+  </g>
+
+  <!-- "AFTER" Badge Label -->
+  <g transform="translate(30, 30)">
+    <rect width="130" height="40" rx="8" fill="#1E4D2B" stroke="#E89818" stroke-width="2"/>
+    <text x="65" y="26" font-family="'Montserrat', sans-serif" font-size="16" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">
+      AFTER
+    </text>
+  </g>
+
+  <!-- Subtitle Caption -->
+  <g transform="translate(30, 80)">
+    <rect width="270" height="28" rx="6" fill="rgba(20,54,30,0.85)"/>
+    <text x="135" y="19" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">
+      Zero Damage • 100% Debris Cleaned Up
+    </text>
+  </g>
+</svg>

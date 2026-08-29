@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none" class="operations-graphic-svg">
+  <defs>
+    <linearGradient id="bgOps" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14361E"/>
+      <stop offset="60%" stop-color="#1E4D2B"/>
+      <stop offset="100%" stop-color="#2D723E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgOps)"/>
+
+  <!-- Arborist Truck & High-Capacity Wood Chipper -->
+  <g transform="translate(100, 180)">
+    <!-- Commercial Work Truck -->
+    <rect x="50" y="40" width="220" height="130" rx="12" fill="#FAFAF7" stroke="#14361E" stroke-width="3"/>
+    <rect x="50" y="40" width="80" height="80" fill="#2C3E35"/>
+    <circle cx="100" cy="180" r="32" fill="#1A2421" stroke="#4B5563" stroke-width="8"/>
+    <circle cx="210" cy="180" r="32" fill="#1A2421" stroke="#4B5563" stroke-width="8"/>
+    <!-- Logo on Truck Door -->
+    <rect x="150" y="70" width="100" height="45" rx="6" fill="#14361E" stroke="#E89818" stroke-width="1.5"/>
+    <text x="200" y="90" font-family="'Montserrat', sans-serif" font-size="10" font-weight="900" fill="#FFFFFF" text-anchor="middle">LC TREE</text>
+    <text x="200" y="104" font-family="'Inter', sans-serif" font-size="7" font-weight="700" fill="#E89818" text-anchor="middle">316-393-7207</text>
+
+    <!-- Industrial Chipper Trailer -->
+    <g transform="translate(280, 50)">
+      <rect x="20" y="30" width="140" height="90" rx="8" fill="#E89818" stroke="#C77F12" stroke-width="3"/>
+      <polygon points="160,30 220,10 160,70" fill="#E89818"/>
+      <!-- Chipper chute pointing into truck box -->
+      <path d="M40 30 L-20 -40 L20 -40 L60 30 Z" fill="#C77F12"/>
+      <circle cx="90" cy="130" r="26" fill="#1A2421" stroke="#4B5563" stroke-width="6"/>
+      <line x1="0" y1="100" x2="20" y2="100" stroke="#14361E" stroke-width="6"/>
+    </g>
+  </g>
+
+  <!-- Clean Ground Line -->
+  <rect x="0" y="390" width="800" height="60" fill="#14361E"/>
+
+  <!-- Operations Header Overlay -->
+  <g transform="translate(40, 40)">
+    <rect width="360" height="70" rx="10" fill="rgba(20,54,30,0.85)" stroke="#E89818" stroke-width="2"/>
+    <text x="180" y="32" font-family="'Montserrat', sans-serif" font-size="18" font-weight="900" fill="#FFFFFF" text-anchor="middle">
+      ON-SITE PRECISION &amp; SAFETY
+    </text>
+    <text x="180" y="54" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#E89818" text-anchor="middle">
+      Commercial-Grade Rigging • 100% Debris Removal
+    </text>
+  </g>
+</svg>
