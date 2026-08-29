@@ -67,7 +67,7 @@
         </nav>
 
         <div class="header-actions">
-          
+          <a href="tel:3163937207" class="btn btn-primary btn-header-cta header-cta">Call: 316-393-7207</a>
           <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
@@ -303,9 +303,8 @@
           <a href="index.html" class="footer-logo-link" aria-label="LC Tree and Landscaping Home">
             <img src="assets/images/logo.jpg" alt="LC Tree and Landscaping, LLC" width="60" height="60" class="footer-logo-img">
           </a>
-          <p class="footer-tagline">Premium tree removal, precision trimming, stump grinding, and landscaping in South Central Kansas with direct owner accountability.</p>
+          <p class="footer-tagline"><strong>Lad Oborny, Owner &amp; Operator</strong><br>Premium tree removal, precision trimming, stump grinding, and landscaping in South Central Kansas with direct owner accountability.</p>
           <div class="footer-contact-details">
-            
             <p class="footer-phone"><a href="tel:3163937207">📞 316-393-7207</a></p>
             <p class="footer-email"><a href="mailto:info@lctreeks.com">✉️ info@lctreeks.com</a></p>
             <p class="footer-hours">🕒 Mon–Sat: 7:00 AM – 7:00 PM<br><span class="emergency-text">24/7 Emergency Storm Service</span></p>
@@ -383,61 +382,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
-<!-- LABELS SCRIPT -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const prefix = 'H';
-  const mediaElements = document.querySelectorAll('img:not(.footer-logo-img):not(.trust-badge-img):not(.trust-icon):not(.header-logo-img), video');
-  
-  let count = 1;
-  const labels = [];
-  
-  mediaElements.forEach(el => {
-    if (el.closest('.footer-col-trust') || el.closest('.site-header') || el.classList.contains('icon') || el.closest('.service-features-list')) return;
-
-    const label = document.createElement('div');
-    label.textContent = prefix + (count++);
-    label.style.position = 'absolute';
-    label.style.background = 'rgba(255, 0, 0, 0.9)';
-    label.style.color = 'white';
-    label.style.padding = '4px 8px';
-    label.style.fontSize = '14px';
-    label.style.fontWeight = 'bold';
-    label.style.zIndex = '999999';
-    label.style.borderRadius = '0 0 4px 0';
-    label.style.pointerEvents = 'none';
-    label.style.fontFamily = 'monospace';
-    document.body.appendChild(label);
-    
-    labels.push({ el, label });
-  });
-
-  const updatePositions = () => {
-    labels.forEach(({ el, label }) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.width > 0 && rect.height > 0) {
-        label.style.display = 'block';
-        label.style.top = (window.scrollY + rect.top) + 'px';
-        label.style.left = (window.scrollX + rect.left) + 'px';
-      } else {
-        label.style.display = 'none';
-      }
-    });
-  };
-
-  window.addEventListener('resize', updatePositions);
-  window.addEventListener('scroll', updatePositions);
-  updatePositions();
-  setInterval(updatePositions, 1000); // Check repeatedly just in case layout shifts
-});
-</script>
-
-
-
 
   <!-- Scroll to Top Button -->
   <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">

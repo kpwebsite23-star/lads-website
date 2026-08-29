@@ -64,7 +64,7 @@
         </nav>
 
         <div class="header-actions">
-          
+          <a href="tel:3163937207" class="btn btn-primary btn-header-cta header-cta">Call: 316-393-7207</a>
           <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation menu">
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
@@ -443,7 +443,7 @@
             </h3>
             <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3" hidden="">
               <div class="faq-answer-inner">
-                <p>We respect your time. When you call <strong>(316) 393-7207</strong> or submit our online estimate form, owner <strong>Our Team will contact you within 24 hours</strong>.</p>
+                <p>We respect your time. When you call <strong>(316) 393-7207</strong> or submit our online estimate form, owner <strong>Lad Oborny will contact you within 24 hours</strong>.</p>
                 <p>In most instances, we can perform an on-site property evaluation within 24 to 48 hours and provide you with an upfront, written quote on the spot with clear line-item pricing and zero hidden fees.</p>
               </div>
             </div>
@@ -522,15 +522,15 @@
           </div>
         </div>
 
-        <!-- Our Team Direct Help Box -->
+        <!-- Owner Direct Help Box -->
         <div class="card owner-help-card mt-5 text-center shadow-md">
           <div class="owner-help-avatar-wrap">
-            <img src="assets/images/owner-profile.svg" alt="our owner" width="120" height="120" class="owner-avatar-img">
+            <img src="assets/images/owner-profile.svg" alt="Lad Oborny, Owner & Operator of LC Tree and Landscaping" width="120" height="120" class="owner-avatar-img">
           </div>
           <h3 class="owner-help-title">Still Have Questions?</h3>
-          <p class="owner-help-desc">Our Team <strong>Our Team</strong> is always ready to assist you directly with custom project advice, hazard evaluations, or scheduling questions.</p>
+          <p class="owner-help-desc">Owner <strong>Lad Oborny</strong> is always ready to assist you directly with custom project advice, hazard evaluations, or scheduling questions.</p>
           <div class="owner-help-actions">
-            <a href="tel:3163937207" class="btn btn-primary btn-lg" aria-label="Call Our Team at 316-393-7207">
+            <a href="tel:3163937207" class="btn btn-primary btn-lg" aria-label="Call Lad Oborny at 316-393-7207">
               <svg class="icon icon-phone" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
               <span>Call Us Directly</span>
             </a>
@@ -549,9 +549,8 @@
           <a href="index.html" class="footer-logo-link" aria-label="LC Tree and Landscaping Home">
             <img src="assets/images/logo.jpg" alt="LC Tree and Landscaping, LLC" width="60" height="60" class="footer-logo-img">
           </a>
-          <p class="footer-tagline">Premium tree removal, precision trimming, stump grinding, and landscaping in South Central Kansas with direct owner accountability.</p>
+          <p class="footer-tagline"><strong>Lad Oborny, Owner &amp; Operator</strong><br>Premium tree removal, precision trimming, stump grinding, and landscaping in South Central Kansas with direct owner accountability.</p>
           <div class="footer-contact-details">
-            
             <p class="footer-phone"><a href="tel:3163937207">📞 316-393-7207</a></p>
             <p class="footer-email"><a href="mailto:info@lctreeks.com">✉️ info@lctreeks.com</a></p>
             <p class="footer-hours">🕒 Mon–Sat: 7:00 AM – 7:00 PM<br><span class="emergency-text">24/7 Emergency Storm Service</span></p>
@@ -565,10 +564,6 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
             <li><a href="services.html">Our Services</a></li>
-            
-            
-            
-            
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
@@ -622,68 +617,10 @@
         <p class="copyright-text">© <span id="current-year">2026</span> LC Tree and Landscaping, LLC. All Rights Reserved.</p>
         <div class="sub-footer-links">
           <a href="contact.html">Privacy Policy</a>
-          
-          
-          
         </div>
       </div>
     </div>
   </footer>
-
-
-
-
-<!-- LABELS SCRIPT -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const prefix = 'C';
-  const mediaElements = document.querySelectorAll('img:not(.footer-logo-img):not(.trust-badge-img):not(.trust-icon):not(.header-logo-img), video');
-  
-  let count = 1;
-  const labels = [];
-  
-  mediaElements.forEach(el => {
-    if (el.closest('.footer-col-trust') || el.closest('.site-header') || el.classList.contains('icon') || el.closest('.service-features-list')) return;
-
-    const label = document.createElement('div');
-    label.textContent = prefix + (count++);
-    label.style.position = 'absolute';
-    label.style.background = 'rgba(255, 0, 0, 0.9)';
-    label.style.color = 'white';
-    label.style.padding = '4px 8px';
-    label.style.fontSize = '14px';
-    label.style.fontWeight = 'bold';
-    label.style.zIndex = '999999';
-    label.style.borderRadius = '0 0 4px 0';
-    label.style.pointerEvents = 'none';
-    label.style.fontFamily = 'monospace';
-    document.body.appendChild(label);
-    
-    labels.push({ el, label });
-  });
-
-  const updatePositions = () => {
-    labels.forEach(({ el, label }) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.width > 0 && rect.height > 0) {
-        label.style.display = 'block';
-        label.style.top = (window.scrollY + rect.top) + 'px';
-        label.style.left = (window.scrollX + rect.left) + 'px';
-      } else {
-        label.style.display = 'none';
-      }
-    });
-  };
-
-  window.addEventListener('resize', updatePositions);
-  window.addEventListener('scroll', updatePositions);
-  updatePositions();
-  setInterval(updatePositions, 1000); // Check repeatedly just in case layout shifts
-});
-</script>
-
-
-
 
   <!-- Scroll to Top Button -->
   <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top">

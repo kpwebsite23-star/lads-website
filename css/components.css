@@ -1964,3 +1964,442 @@
 .btn-primary.cta-btn {
   animation: pulse 2s infinite;
 }
+
+/* ==========================================================================
+   20. REFINED SITE-WIDE COMPONENTS & ARCHITECTURE
+   Forms, Contact Grid, Service Details, Specs Box, FAQ Accordion, Reviews Grid
+   ========================================================================== */
+
+/* --- Form Styling Harmonization --- */
+.form-control,
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-text-main);
+  background-color: #FFFFFF;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.form-control:focus,
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(30, 77, 43, 0.15);
+}
+
+.required-star {
+  color: var(--color-error);
+  font-weight: 700;
+}
+
+.form-trust-signals {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.trust-signal-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+}
+
+/* --- Contact Page Layout & Cards --- */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: flex-start;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-channel-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1.5rem;
+}
+
+.channel-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.channel-title {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin-bottom: 0.25rem;
+}
+
+.channel-value {
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.channel-value a {
+  color: var(--color-primary);
+  font-weight: 700;
+  transition: color var(--transition-fast);
+}
+
+.channel-value a:hover {
+  color: var(--color-accent);
+}
+
+.channel-note {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.hours-schedule p {
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+}
+
+.hours-schedule p:last-child {
+  margin-bottom: 0;
+  color: var(--color-accent-dark);
+  font-weight: 600;
+}
+
+.service-map-card {
+  padding: 1.75rem;
+}
+
+.service-area-map-wrap {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  margin-top: 1rem;
+}
+
+/* --- Services Detail Blocks & Specs Box --- */
+.service-detail-block {
+  padding: clamp(3.5rem, 5vw, 5rem) 0;
+}
+
+.service-detail-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-badge-tag {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 1rem;
+  width: fit-content;
+}
+
+.service-lead {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--color-text-main);
+  margin-bottom: 1rem;
+}
+
+.service-specs-box {
+  padding: 1.75rem;
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  margin: 1.5rem 0;
+}
+
+.specs-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  margin-bottom: 1rem;
+}
+
+.service-bullets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.service-bullets-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.service-bullets-list li strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--color-primary-dark);
+}
+
+.service-bullets-list li span {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.service-media-card {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.service-feature-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.service-trust-callout {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+}
+
+.trust-pill {
+  background: rgba(12, 32, 18, 0.92);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-primary-lighter);
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+
+.services-quick-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* --- Accessible FAQ Accordion Styling --- */
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq-item {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background-color: #FFFFFF;
+  overflow: hidden;
+  transition: all var(--transition-fast);
+}
+
+.faq-item.is-open {
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-header {
+  margin: 0;
+}
+
+.faq-question-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: none;
+  border: none;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.faq-question-btn:hover {
+  background-color: var(--color-bg-warm);
+}
+
+.faq-item.is-open .faq-question-btn {
+  background-color: var(--color-bg-subtle);
+  color: var(--color-primary);
+}
+
+.faq-icon-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  transition: transform var(--transition-normal);
+}
+
+.faq-item.is-open .faq-icon-indicator {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
+}
+
+.faq-answer-inner {
+  padding: 0 1.5rem 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--color-text-secondary);
+}
+
+.faq-answer-inner p {
+  margin-bottom: 0.75rem;
+}
+
+.faq-answer-inner p:last-child {
+  margin-bottom: 0;
+}
+
+/* Owner Direct Help Card */
+.owner-help-card {
+  padding: 2.25rem;
+  background-color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  border-top: 4px solid var(--color-accent);
+}
+
+.owner-help-avatar-wrap {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 3px solid var(--color-primary);
+}
+
+.owner-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.owner-help-title {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.owner-help-desc {
+  max-width: 580px;
+  margin: 0 auto 1.5rem;
+  font-size: 1rem;
+}
+
+.owner-help-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* --- Verified Reviews Section --- */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+@media (max-width: 992px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.review-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.review-stars {
+  font-size: 1.15rem;
+  letter-spacing: 2px;
+}
+
+.review-service-badge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+.review-quote p {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.reviewer-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.reviewer-location {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.verified-badge {
+  color: var(--color-primary-light);
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+

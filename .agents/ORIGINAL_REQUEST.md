@@ -40,3 +40,36 @@ Integrate the specific copywriting cues, differentiators, and section goals (e.g
 ### R3. Content Integration
 - [ ] A script or agent-as-judge verifies the Home page contains the "The LC Difference" section and a Testimonial snippet.
 - [ ] A script or agent-as-judge verifies the Services page breaks down Tree Removal, Tree Trimming, Stump Grinding, and Landscaping.
+
+## Follow-up — 2026-08-29T15:47:42Z
+
+# Teamwork Project Prompt — Draft
+
+> Status: Launched
+> Goal: Craft prompt → get user approval → delegate to teamwork_preview
+> Requested team: Full team
+
+Condense the homepage of the LC Tree and Landscaping website because it currently has too much content, too many images, and requires too much scrolling. The team must take their time to do a comprehensive, meticulous UI polish (colors, spacing, typography, and layout) across the entire site to make it look as perfect and premium as possible without completely abandoning the core brand theme.
+
+Working directory: c:\Users\prest\Documents\antigravity\dazzling-hertz
+Integrity mode: development
+
+## Requirements
+
+### R1. Condense the Homepage
+Reduce the vertical length of `index.html`. Group or remove excessive images, condense long text sections, and consolidate overlapping sections so the page is punchier and requires less scrolling.
+
+### R2. Comprehensive UI Polish
+Improve the site-wide UI meticulously. Take your time to refine colors, adjust padding/margins for perfect visual hierarchy and breathing room, and ensure a pristine, modern aesthetic across all pages.
+
+## Verification Resources
+The user has provided an existing test suite: `tests/verify_website.js`. This script tests core functionality and must pass.
+
+## Acceptance Criteria
+
+### Automated Tests
+- [ ] Running `node tests/verify_website.js` in the working directory exits with code 0 (all tests pass).
+
+### Agent-as-Judge UI Review
+- [ ] An independent reviewing agent verifies that `index.html` is noticeably shorter (either by line count of the HTML content or by structural inspection of removed/condensed sections).
+- [ ] An independent reviewing agent confirms that the UI changes (CSS/HTML) improve the cohesive look of the site without breaking the core theme.

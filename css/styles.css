@@ -1111,3 +1111,43 @@ main {
   color: var(--color-accent) !important;
 }
 
+/* Background & Utility Classes */
+.bg-dark-slate {
+  background: linear-gradient(135deg, #0C2012 0%, #14361E 60%, #1B4332 100%) !important;
+  color: #FFFFFF !important;
+}
+
+.bg-dark-slate h1, .bg-dark-slate h2, .bg-dark-slate h3, .bg-dark-slate h4 {
+  color: #FFFFFF !important;
+}
+
+.bg-dark-slate p, .bg-dark-slate .page-subtitle {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.bg-green-subtle {
+  background-color: var(--color-primary-subtle) !important;
+}
+
+.bg-amber-subtle {
+  background-color: rgba(232, 152, 24, 0.12) !important;
+}
+
+.bg-slate-subtle {
+  background-color: #E2E8E4 !important;
+}
+
+.text-amber {
+  color: var(--color-accent) !important;
+}
+
+.text-green {
+  color: var(--color-primary-light) !important;
+}
+
+.max-w-750 { max-width: 750px; margin-left: auto; margin-right: auto; }
+.max-w-800 { max-width: 800px; margin-left: auto; margin-right: auto; }
+.max-w-850 { max-width: 850px; margin-left: auto; margin-right: auto; }
+.max-w-900 { max-width: 900px; margin-left: auto; margin-right: auto; }
+
+
